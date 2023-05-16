@@ -333,7 +333,7 @@ namespace TPBot {
      * @param state Line sensor status, eg: LineSide.FindLine
      */
     //% weight=70
-    //% block="O %side Αισθητήρας γραμμής εντόπισε %state"
+    //% block="O %side αισθητήρας γραμμής εντόπισε %state"
     //% state.fieldEditor="gridpicker" state.fieldOptions.columns=2
     //% side.fieldEditor="gridpicker" side.fieldOptions.columns=2
     export function trackSide(side: LineSide, state: LineState): boolean {
@@ -433,7 +433,7 @@ namespace TPBot {
     * @param judge state, eg: Sonarjudge.<
     */
     //% weight=35
-    //% block="Απόσταση αισθητήρα υπερήχων %judge %dis cm"
+    //% block="Απόσταση αισθητήρα υπερήχων %judge %dis εκ"
     //% dis.min=1 dis.max=400
     //% judge.fieldEditor="gridpicker" judge.fieldOptions.columns=2
     export function sonarJudge(judge: Sonarjudge, dis: number): boolean {
